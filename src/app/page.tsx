@@ -19,7 +19,15 @@ const techStacks = [
   },
 ];
 
-const projects = [
+type Project = {
+  name: string;
+  description: string;
+  role: string;
+  link: string;
+  isPrivate?: boolean;
+};
+
+const projects: Project[] = [
   {
     name: "ElasticSearch_pj5",
     description: "기술 키워드 기반 오픈 데이터 검색 & 트렌드 분석 플랫폼. MongoDB ↔ Monstache ↔ Elasticsearch 연동을 통한 형태소 분석 기반 검색 시스템.",
